@@ -1,6 +1,6 @@
 import Hero from "./hero/hero"
 import HowItWorks from "./how-it-works/HowItWorks"
-
+import Trusted from "../Trusted/Trusted"
 
 export default function Main() {
     return (
@@ -8,6 +8,8 @@ export default function Main() {
             <main className="site-main">
       
             <Hero/>
+
+            <Trusted />
 
             <section className="how-it-works">
               <h2>How it works.</h2>

@@ -1,5 +1,5 @@
 import "./page.css";
-import Main from '../src/components/main/Main'
+import Main from "../src/components/main/Main";
 
 export default function Home() {
   return (
