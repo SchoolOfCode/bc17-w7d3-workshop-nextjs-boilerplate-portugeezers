@@ -4,36 +4,46 @@ import { useState } from 'react'
 
 export default function ContactForm() {
 
-    const [ fullName, setFullName ] = useState('');
+    const [ fullName, setFullName ] = useState("");
     const [ postcode, setPostcode] = useState("");
     const [ address, setAddress] = useState("");
     const [ city, setCity] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [ phoneNumber, setPhoneNumber ] = useState("");
     const [ email, setEmail] = useState("");
 
     function handleChange(e) {
-        console.log(e.target.value);
         switch (e.target.name) {
             case "fullName":
                 setFullName(e.target.value)
                 break
-                case "postcode":
-                    setPostcode(e.target.value)
+            case "postcode":
+                setPostcode(e.target.value)
                 break
-                case "address":
+            case "address":
                 setAddress(e.target.value)
                 break
-                case "city":
-                    setCity(e.target.value)
+            case "city":
+                setCity(e.target.value)
                 break
-                case "phoneNumber":
+            case "phoneNumber":
                 setPhoneNumber(e.target.value)
                 break
-                case "email":
-                    setEmail(e.target.value)
+            case "email":
+                setEmail(e.target.value)
+                break
             default:
                 break
         }
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(fullName)
+        console.log(postcode)
+        console.log(address)
+        console.log(city)
+        console.log(phoneNumber)
+        console.log(email)
     }
 
 
@@ -90,9 +100,9 @@ export default function ContactForm() {
 
             </fieldset>
 
-            <div>Error message to conditionally render if information is missing</div>
+            {!(fullName && address && city && postcode && phoneNumber && email) && <div>Error all fields are required - some missing.</div>}
 
-            <button>Submit</button>
+            <button type="submit" onClick={handleSubmit}>Submit</button>
 
         </form>
     )
