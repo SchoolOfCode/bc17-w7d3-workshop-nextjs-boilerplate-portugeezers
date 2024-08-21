@@ -1,64 +1,63 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useReducer } from 'react'
 import styles from "./contactForm.module.css"; 
+
+const initialState = {
+    data: {
+        fullName: "",
+    },
+    error: false,
+}
+
+function reducer(state, action) {
+    switch (action.type) {
+        case "INPUT_CHANGE":
+            return {
+                ...state,
+                data: {
+                    ...state.data,
+                    [action.payload.fieldName]: action.payload.fieldValue
+                },
+            }
+        default:
+            return state
+    }
+}
 
 export default function ContactForm() {
 
-    const [ fullName, setFullName ] = useState("");
-    const [ postcode, setPostcode] = useState("");
-    const [ address, setAddress] = useState("");
-    const [ city, setCity] = useState("");
-    const [ phoneNumber, setPhoneNumber ] = useState("");
-    const [ email, setEmail] = useState("");
+    const [state, dispatch] = useReducer(reducer, initialState);
 
     const [ error, setError ] = useState(false)
 
+    console.log(state)
+
     function handleChange(e) {
-        switch (e.target.name) {
-            case "fullName":
-                setFullName(e.target.value)
-                break
-            case "postcode":
-                setPostcode(e.target.value)
-                break
-            case "address":
-                setAddress(e.target.value)
-                break
-            case "city":
-                setCity(e.target.value)
-                break
-            case "phoneNumber":
-                setPhoneNumber(e.target.value)
-                break
-            case "email":
-                setEmail(e.target.value)
-                break
-            default:
-                break
-        }
+        dispatch({ 
+            type: "INPUT_CHANGE",
+            payload: {
+                fieldName: e.target.name,
+                fieldValue: e.target.value
+            }
+         })
     }
 
     function handleSubmit(e) {
         e.preventDefault();
 
-        if (!(fullName && address && city && postcode && phoneNumber && email)) {
+        if (!(state.data.fullName)) {
             setError(true)
             return
         } else {
             setError(false)
-            console.log(fullName)
-            console.log(postcode)
-            console.log(address)
-            console.log(city)
-            console.log(phoneNumber)
-            console.log(email)
+            console.log(state)
         }
     }
 
 
     return (
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={handleSubmit}>
 
             <fieldset className={styles.group}>
 
@@ -67,52 +66,18 @@ export default function ContactForm() {
                 <ul>
 
                     <li className={styles.inputGroup}>
-                    <label htmlFor="fullName">Full name</label>
-                    <input className={styles.input} type="text" name="fullName" value={fullName} onChange={handleChange}></input>
-                    </li>
-
-                    <li className={styles.inputGroup}>
-                    <label htmlFor="postcode">Postcode</label>
-                    <input className={styles.input} type="text" name="postcode" value={postcode} onChange={handleChange}></input>
-                    </li>
-
-                    <li className={styles.inputGroup}>
-                    <label htmlFor="address">House/Flat Number and Street Name</label>
-                    <input className={styles.input} type="text" name="address" value={address} onChange={handleChange}></input>
-                    </li>
-
-                    <li className={styles.inputGroup}>
-                    <label htmlFor="city">City</label>
-                    <input className={styles.input} type="text" name="city" value={city} onChange={handleChange}></input>
+                        <label htmlFor="fullName">Full name</label>
+                        <input className={styles.input} type="text" name="fullName" value={state.data.fullName} onChange={handleChange}></input>
                     </li>
 
                 </ul>
 
             
-            </fieldset>
-            
-            <fieldset className={styles.group}>
-
-                <legend className={styles.groupTitle}>Contact Information:</legend>
-
-                <ul>
-
-                    <li className={styles.inputGroup}>
-                    <label htmlFor="phoneNumber">Phone number</label>
-                    <input className={styles.input} type="number" name="phoneNumber" value={phoneNumber} onChange={handleChange}></input>
-                    </li>
-
-                    <li className={styles.inputGroup}>
-                    <label htmlFor="email">Email address</label>
-                    <input className={styles.input} type="email" name="email" value={email} onChange={handleChange}></input>
-                    </li>
-                </ul>
-
             </fieldset>
 
             {error && <div className={styles.error}>Error all fields are required - some missing.</div>}
 
-            <button className={styles.button} type="submit" onClick={handleSubmit}>Submit</button>
+            <button className={styles.button} type="submit">Submit</button>
 
         </form>
     )
