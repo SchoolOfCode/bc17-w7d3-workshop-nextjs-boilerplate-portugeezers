@@ -81,6 +81,27 @@ Now all you need to do is use that bit of state ("menuToggle" maybe) to show/hid
 Users should see a link on the home page saying "Book Consultation", they should not see the phone number anymore.✅
 Users should be able to click the link and go to a "Design Booking" page ("/booking")✅
 When a user reaches the "Design Booking" page they should see a simple form that matches the designs you've been given.✅
-When a user submits the form it should validate that no fields are empty.
-If there is an empty form field show an error.
-If there is no error then console log the form data 🙂 (don't worry about posting the data anywhere).
+When a user submits the form it should validate that no fields are empty.✅
+If there is an empty form field show an error.✅
+If there is no error then console log the form data 🙂 (don't worry about posting the data anywhere).✅
+
+### 👷🏾 Reducer Refactor 👷🏻‍♂️
+
+need to copy contactForm and: - Clear out all the form fields apart from one
+-removing the state
+-removing the logic in the onChange handler
+-remove the HTML >> check out work - Submitted correctly - Submitted an error
+
+    - Create an initial state object that mimicks the state we have
+    - Create a reducer function
+    - Connect those 2 things to useReducer
+     >> check out work
+
+     - Remove fullName state
+     - Removed setfullName state
+     - remove references to fullName state
+     - Add references yo state.data.fullName
+       >> check out work
+
+    - Dispatch an action to the reducer
+    - Make the reducer able to do that action

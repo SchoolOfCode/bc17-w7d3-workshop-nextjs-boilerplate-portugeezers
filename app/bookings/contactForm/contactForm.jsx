@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import styles from "./contactForm.module.css"; 
 
 export default function ContactForm() {
 
@@ -57,32 +58,32 @@ export default function ContactForm() {
 
 
     return (
-        <form>
+        <form className={styles.form}>
 
-            <fieldset>
+            <fieldset className={styles.group}>
 
-                <legend>Personal Information:</legend>
+                <legend className={styles.groupTitle}>Personal Information:</legend>
 
                 <ul>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="fullName">Full name</label>
-                    <input type="text" name="fullName" value={fullName} onChange={handleChange}></input>
+                    <input className={styles.input} type="text" name="fullName" value={fullName} onChange={handleChange}></input>
                     </li>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="postcode">Postcode</label>
-                    <input type="text" name="postcode" value={postcode} onChange={handleChange}></input>
+                    <input className={styles.input} type="text" name="postcode" value={postcode} onChange={handleChange}></input>
                     </li>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="address">House/Flat Number and Street Name</label>
-                    <input type="text" name="address" value={address} onChange={handleChange}></input>
+                    <input className={styles.input} type="text" name="address" value={address} onChange={handleChange}></input>
                     </li>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="city">City</label>
-                    <input type="text" name="city" value={city} onChange={handleChange}></input>
+                    <input className={styles.input} type="text" name="city" value={city} onChange={handleChange}></input>
                     </li>
 
                 </ul>
@@ -90,28 +91,28 @@ export default function ContactForm() {
             
             </fieldset>
             
-            <fieldset>
+            <fieldset className={styles.group}>
 
-                <legend>Contact Information:</legend>
+                <legend className={styles.groupTitle}>Contact Information:</legend>
 
                 <ul>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="phoneNumber">Phone number</label>
-                    <input type="number" name="phoneNumber" value={phoneNumber} onChange={handleChange}></input>
+                    <input className={styles.input} type="number" name="phoneNumber" value={phoneNumber} onChange={handleChange}></input>
                     </li>
 
-                    <li>
+                    <li className={styles.inputGroup}>
                     <label htmlFor="email">Email address</label>
-                    <input type="email" name="email" value={email} onChange={handleChange}></input>
+                    <input className={styles.input} type="email" name="email" value={email} onChange={handleChange}></input>
                     </li>
                 </ul>
 
             </fieldset>
 
-            {error && <div>Error all fields are required - some missing.</div>}
+            {error && <div className={styles.error}>Error all fields are required - some missing.</div>}
 
-            <button type="submit" onClick={handleSubmit}>Submit</button>
+            <button className={styles.button} type="submit" onClick={handleSubmit}>Submit</button>
 
         </form>
     )
