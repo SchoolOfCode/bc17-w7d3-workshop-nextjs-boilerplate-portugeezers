@@ -11,6 +11,8 @@ export default function ContactForm() {
     const [ phoneNumber, setPhoneNumber ] = useState("");
     const [ email, setEmail] = useState("");
 
+    const [ error, setError ] = useState(false)
+
     function handleChange(e) {
         switch (e.target.name) {
             case "fullName":
@@ -38,12 +40,19 @@ export default function ContactForm() {
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(fullName)
-        console.log(postcode)
-        console.log(address)
-        console.log(city)
-        console.log(phoneNumber)
-        console.log(email)
+
+        if (!(fullName && address && city && postcode && phoneNumber && email)) {
+            setError(true)
+            return
+        } else {
+            setError(false)
+            console.log(fullName)
+            console.log(postcode)
+            console.log(address)
+            console.log(city)
+            console.log(phoneNumber)
+            console.log(email)
+        }
     }
 
 
@@ -100,7 +109,7 @@ export default function ContactForm() {
 
             </fieldset>
 
-            {!(fullName && address && city && postcode && phoneNumber && email) && <div>Error all fields are required - some missing.</div>}
+            {error && <div>Error all fields are required - some missing.</div>}
 
             <button type="submit" onClick={handleSubmit}>Submit</button>
 
