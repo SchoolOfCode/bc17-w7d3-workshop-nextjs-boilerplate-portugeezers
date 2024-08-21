@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useReducer } from 'react'
+import { useReducer } from 'react'
 import styles from "./contactForm.module.css"; 
 
 const initialState = {
@@ -28,9 +28,9 @@ function reducer(state, action) {
             }
         case "CHECK_ERROR":
             return {
-
+                ...state,
+                error: (!state.data.fullName || !state.data.postcode || !state.data.address || !state.data.city || !state.data.phoneNumber || !state.data.email ? true : false)
             }
-                
         default:
             return state
     }
@@ -39,8 +39,6 @@ function reducer(state, action) {
 export default function ContactForm() {
 
     const [state, dispatch] = useReducer(reducer, initialState);
-
-    const [ error, setError ] = useState(false)
 
     function handleChange(e) {
         dispatch({ 
@@ -55,13 +53,9 @@ export default function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
 
-        if (!state.data.fullName || !state.data.postcode || !state.data.address || !state.data.city || !state.data.phoneNumber || !state.data.email) {
-            setError(true)
-            return
-        } else {
-            setError(false)
-            console.log(state)
-        }
+        dispatch({
+            type: "CHECK_ERROR"
+        })
     }
 
 
@@ -120,7 +114,7 @@ export default function ContactForm() {
 
             </fieldset>
 
-            {error && <div className={styles.error}>Error all fields are required - some missing.</div>}
+            {state.error && <div className={styles.error}>Error all fields are required - some missing.</div>}
 
             <button className={styles.button} type="submit">Submit</button>
 
