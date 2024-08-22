@@ -106,11 +106,20 @@ need to copy contactForm and: - Clear out all the form fields apart from one ✅
     - Dispatch an action to the reducer ✅
     - Make the reducer able to do that action ✅
 
-
-
-
-- As a user when I submit the form it should  show me that it is submitting.
+- As a user when I submit the form it should show me that it is submitting.
 - As a user I should not be able to submit again while it is submitting.
 - As a user when I submit the form in a correct way (passes validation) I should see the form replaced with a simple success message.
 - As a user when I submit the form in an incorrect way I should see that the form is no longer submitting and that there are errors.
 - As a user who has incorrectly submitted the form I should see an error under each field that has failed validation. The error should be specific to the field ("Not a valid phone number", "No bookings outside of England, Wales or Scotland").
+
+## 🧪 Testathon 🧪
+
+Home page
+click on "Book Here"
+Fill Full name (Y/N)
+Fill Postcode (Y/N)
+Fill House/Flat Number and Street Name (Y/N)
+Fill City (Y/N)
+Fill Phone number (Y/N)
+Fill Email address (Y/N)
+Click
