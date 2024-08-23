@@ -1,0 +1,165 @@
+<mxfile host="65bd71144e">
+    <diagram id="96eD70boARBlNsmrQVVA" name="Page-1">
+        <mxGraphModel dx="1877" dy="1641" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="4" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;strokeWidth=3;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="" style="shape=actor;whiteSpace=wrap;html=1;fillColor=#FFFF33;strokeColor=#FF8000;strokeWidth=3;" vertex="1" parent="1">
+                    <mxGeometry x="365" y="-1160" width="30" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" style="edgeStyle=none;html=1;strokeWidth=3;fontColor=#000000;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Fireplace Palace&lt;/font&gt;&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Home Page&lt;/font&gt;" style="shape=loopLimit;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;strokeWidth=3;fillColor=#FF8000;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="310" y="-1070" width="140" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;fontColor=#F7F7F7;" edge="1" parent="1" source="5" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="User Clicks&lt;br style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;Book Here&lt;/b&gt; link" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FF8000;strokeWidth=2;fontColor=#000000;fillColor=#FFB366;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="-920" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;fontSize=13;fontColor=#FFFFFF;" edge="1" parent="1" source="8" target="10">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Design Booking page" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#F7F7F7;fillColor=#666666;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="-800" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Booking Form&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#FFFFFF;fillColor=#666666;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="-710" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;entryX=0.133;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=12;fontColor=#000000;shape=link;" edge="1" parent="1" source="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="559.95" y="-834.98" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;strokeColor=#333333;strokeWidth=2;fontSize=13;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="-860" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="edgeStyle=none;shape=link;html=1;strokeWidth=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="23" target="13">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Link works, redirected to booking&amp;nbsp;page&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=3;fontSize=12;fontColor=#000000;fillColor=#F7F7F7;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="-857.5" width="230" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" style="edgeStyle=none;html=1;entryX=0.133;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=12;fontColor=#000000;shape=link;" edge="1" parent="1" source="26">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="559.95" y="-684.98" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;strokeColor=#333333;strokeWidth=2;fontSize=13;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="-710" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="edgeStyle=none;shape=link;html=1;strokeWidth=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="28" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="All Form fields are visible and empty" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=3;fontSize=12;fontColor=#000000;fillColor=#F7F7F7;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="560" y="-707.5" width="230" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="User enters information into each form field" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FF8000;strokeWidth=2;fontColor=#000000;fillColor=#FFB366;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="320" y="-600" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;fontSize=13;fontColor=#FFFFFF;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="29">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="380" y="-649" as="sourcePoint"/>
+                        <mxPoint x="380" y="-619" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" style="edgeStyle=none;html=1;entryX=0.133;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=12;fontColor=#000000;shape=link;" edge="1" parent="1" source="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="559.95" y="-511.98" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;strokeColor=#333333;strokeWidth=2;fontSize=13;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="480" y="-537" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;shape=link;html=1;strokeWidth=1;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="35" target="33">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Information is entered into each field" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontSize=12;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="560" y="-534.5" width="230" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="36" target="40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;strokeWidth=3;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="36" target="41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="User Clicks &lt;b&gt;Request Design Consultation &lt;/b&gt;button" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FF8000;strokeWidth=2;fontColor=#000000;fillColor=#FFB366;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="289" y="-476" width="191" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeWidth=3;fontSize=13;fontColor=#FFFFFF;entryX=0.471;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="36">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="379.5" y="-540" as="sourcePoint"/>
+                        <mxPoint x="379.5" y="-491" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=3;fontSize=12;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="246.5" y="-204" as="targetPoint"/>
+                        <mxPoint x="246.5" y="-254" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="&lt;font color=&quot;#33ffff&quot;&gt;Scenario 1&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;All required fields are correctly filled&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#F7F7F7;fillColor=#666666;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="164" y="-337" width="165" height="77" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" style="edgeStyle=none;html=1;entryX=0.483;entryY=-0.056;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=12;fontColor=#FF3333;" edge="1" parent="1" source="41" target="49">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="&lt;font color=&quot;#33ffff&quot;&gt;Scenario 2&lt;/font&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;The user tries to submit the form with one or more fields left blank&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#F7F7F7;fillColor=#666666;fontStyle=1;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="-338" width="165" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" style="edgeStyle=none;html=1;entryX=0.133;entryY=0.417;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;fontSize=12;fontColor=#000000;shape=link;" edge="1" parent="1" source="46">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="719.95" y="-246.98000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;strokeColor=#333333;strokeWidth=2;fontSize=13;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="640" y="-272" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="edgeStyle=none;shape=link;html=1;strokeWidth=1;fontSize=12;fontColor=#000000;width=-4.117647058823529;" edge="1" parent="1" source="48" target="46">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Error messages" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=3;fontSize=12;fontColor=#000000;fillColor=#F7F7F7;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="720" y="-269.5" width="230" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=3;fontSize=12;fontColor=#FF3333;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="49" target="29">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="450" y="-570" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="980" y="-155"/>
+                            <mxPoint x="980" y="-570"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="An error message appears: &quot;&lt;font color=&quot;#ff3333&quot;&gt;&lt;b&gt;Error ll fields are required - some missing.&lt;/b&gt;&lt;/font&gt;&quot;&amp;nbsp; The specific fields that are incomplete show the message &quot;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;This field is required&lt;/font&gt;&lt;/b&gt;&quot; under them." style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#FFFFFF;fillColor=#666666;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="368" y="-200" width="315" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=orthogonalEdgeStyle;html=1;strokeWidth=3;fontSize=12;fontColor=#000000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="54">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="245" y="-106" as="targetPoint"/>
+                        <mxPoint x="245" y="-136" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="The button text changes to &quot;&lt;b&gt;&lt;font color=&quot;#000000&quot;&gt;Requesting...&lt;/font&gt;&lt;/b&gt;&quot;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#FFFFFF;fillColor=#666666;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="-200" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="Confirmation message of successful submission" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#333333;strokeWidth=2;fontColor=#FFFFFF;fillColor=#666666;fontSize=13;" vertex="1" parent="1">
+                    <mxGeometry x="171" y="-105" width="150" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="shape=image;html=1;verticalLabelPosition=bottom;verticalAlign=top;imageAspect=0;image=img/clipart/Gear_128x128.png;strokeColor=#333333;strokeWidth=2;fontSize=13;fontColor=#000000;fillColor=#F7F7F7;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="-142.5" width="40" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="" style="edgeStyle=none;shape=link;html=1;strokeWidth=2;fontSize=12;fontColor=#000000;" edge="1" parent="1" source="65" target="63">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="Successful submission" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FF3333;strokeWidth=3;fontSize=12;fontColor=#000000;fillColor=#F7F7F7;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="-120" y="-137.5" width="177" height="45" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
